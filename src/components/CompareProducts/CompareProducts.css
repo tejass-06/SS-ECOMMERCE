@@ -1,0 +1,18 @@
+.compare-products {
+  overflow: hidden;
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+}
+
+.compare-products table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.compare-products th,
+.compare-products td {
+  border-bottom: 1px solid var(--lux-border);
+  padding: 1rem;
+  text-align: left;
+}

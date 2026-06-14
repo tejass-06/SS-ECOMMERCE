@@ -1,0 +1,16 @@
+.product-sort {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.product-sort select {
+  min-width: 12rem;
+}
+
+@media (max-width: 767px) {
+  .product-sort,
+  .product-sort select {
+    width: 100%;
+  }
+}

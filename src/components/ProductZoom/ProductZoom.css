@@ -1,0 +1,13 @@
+.product-zoom {
+  cursor: zoom-in;
+  overflow: hidden;
+  border-radius: var(--lux-radius-xl);
+}
+
+.product-zoom img {
+  transition: transform var(--lux-transition-slow);
+}
+
+.product-zoom:hover img {
+  transform: scale(1.08);
+}

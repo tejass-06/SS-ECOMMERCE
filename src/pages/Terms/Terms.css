@@ -1,0 +1,11 @@
+.terms-page {
+  width: min(100%, 900px);
+  margin-inline: auto;
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.terms-page ul,
+.terms-page ol {
+  padding-left: 1.25rem;
+  color: var(--lux-muted);
+}

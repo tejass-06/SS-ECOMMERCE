@@ -1,0 +1,28 @@
+.lg\:col-span-2 > div,
+.space-y-5 > div[class*='rounded-3xl'] {
+  transition: transform var(--lux-transition), border-color var(--lux-transition),
+    box-shadow var(--lux-transition);
+}
+
+.space-y-5 > div[class*='rounded-3xl']:hover {
+  border-color: var(--lux-border-strong) !important;
+  box-shadow: var(--lux-shadow-md);
+  transform: translateY(-2px);
+}
+
+.space-y-5 img {
+  background: var(--lux-surface);
+  border: 1px solid var(--lux-border);
+}
+
+.space-y-5 button[aria-label='Remove item'] {
+  border-radius: 999px;
+  padding: 0.65rem;
+}
+
+@media (max-width: 767px) {
+  .space-y-5 img {
+    width: 100% !important;
+    height: 14rem !important;
+  }
+}

@@ -1,0 +1,11 @@
+.coupons-admin {
+  display: grid;
+  gap: 1rem;
+}
+
+.coupons-admin article {
+  border: 1px dashed var(--lux-border-strong);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-gold-soft);
+  padding: 1.25rem;
+}

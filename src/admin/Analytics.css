@@ -1,0 +1,12 @@
+.admin-analytics {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.admin-analytics article {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1.25rem;
+}

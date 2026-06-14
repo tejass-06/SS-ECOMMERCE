@@ -1,0 +1,7 @@
+export const APP_CONFIG = {
+  AUTH_ENABLED: false,
+  ADMIN_ENABLED: true,
+  STORE_NAME: 'LUXESTEP',
+  SHIPPING_CHARGE: 99,
+  CURRENCY: 'Rs.',
+};

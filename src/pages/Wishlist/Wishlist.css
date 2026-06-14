@@ -1,0 +1,15 @@
+.wishlist-page,
+section:has(.wishlist-card) {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.wishlist-page h1,
+section:has(.wishlist-card) h1 {
+  margin-bottom: 2rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+}
+
+.wishlist-page .grid,
+section:has(.wishlist-card) .grid {
+  gap: 1.5rem;
+}

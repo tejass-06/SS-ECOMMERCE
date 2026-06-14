@@ -1,0 +1,14 @@
+.main-layout,
+main {
+  width: 100%;
+  min-height: calc(100vh - var(--lux-header));
+}
+
+main {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.main-layout > * {
+  animation: lux-fade-up 420ms var(--lux-transition) both;
+}

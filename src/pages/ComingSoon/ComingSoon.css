@@ -1,0 +1,11 @@
+.coming-soon-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.coming-soon-page h1 {
+  color: var(--lux-gold);
+  font-size: clamp(3rem, 9vw, 6rem);
+}

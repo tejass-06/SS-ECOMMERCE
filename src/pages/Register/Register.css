@@ -1,0 +1,14 @@
+.register-page,
+section:has(form input[type='password']) {
+  padding-inline: 1rem;
+}
+
+.register-page form {
+  width: min(100%, 520px);
+  margin-inline: auto;
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: var(--lux-shadow-md);
+}

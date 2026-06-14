@@ -1,0 +1,12 @@
+.admin-dashboard {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.admin-dashboard article {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1.25rem;
+  box-shadow: var(--lux-shadow-sm);
+}

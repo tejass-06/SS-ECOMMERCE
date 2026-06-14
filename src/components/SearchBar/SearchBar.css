@@ -1,0 +1,43 @@
+input[type='search'],
+input[placeholder*='Search'],
+input[placeholder*='search'] {
+  min-height: 3.75rem;
+  width: 100%;
+  border-radius: var(--lux-radius-xl);
+  background: rgba(255, 255, 255, 0.08) !important;
+  padding-inline: 1.2rem;
+  padding-block: 1rem;
+  box-shadow: var(--lux-shadow-sm);
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  transition: transform var(--lux-transition), border-color var(--lux-transition), box-shadow var(--lux-transition);
+}
+
+input[type='search']:focus,
+input[placeholder*='Search']:focus,
+input[placeholder*='search']:focus {
+  outline: none;
+  border-color: var(--lux-gold) !important;
+  box-shadow: 0 0 0 4px rgba(216, 181, 109, 0.12);
+  transform: translateY(-1px);
+}
+
+input[type='search']:focus,
+input[placeholder*='Search']:focus,
+input[placeholder*='search']:focus {
+  outline: none;
+  border-color: var(--lux-gold) !important;
+  box-shadow: 0 0 0 4px rgba(216, 181, 109, 0.12);
+}
+
+input[type='search']::placeholder,
+input[placeholder*='Search']::placeholder {
+  color: var(--lux-subtle);
+}
+
+@media (max-width: 767px) {
+  input[type='search'],
+  input[placeholder*='Search'],
+  input[placeholder*='search'] {
+    min-height: 3rem;
+  }
+}

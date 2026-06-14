@@ -1,0 +1,20 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.pagination button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-sm);
+  background: var(--lux-surface);
+}
+
+.pagination button:hover,
+.pagination button[aria-current='page'] {
+  background: var(--lux-gold);
+  color: var(--lux-ink);
+}

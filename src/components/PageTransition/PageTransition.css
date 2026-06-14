@@ -1,0 +1,5 @@
+.page-transition,
+main,
+section {
+  animation: lux-fade-up 420ms var(--lux-transition) both;
+}

@@ -1,0 +1,15 @@
+.hero-section,
+section.h-\[80vh\] {
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 34%),
+    linear-gradient(180deg, rgba(8, 8, 12, 0.88), rgba(10, 10, 14, 0.9)),
+    url('../../assets/hero.png') center/cover no-repeat;
+  background-blend-mode: overlay;
+}
+
+@media (max-width: 767px) {
+  .hero-section,
+  section.h-\[80vh\] {
+    background-size: cover;
+    background-position: center 55%;
+  }
+}

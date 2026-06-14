@@ -1,0 +1,11 @@
+.orders-admin th,
+.orders-admin td {
+  border-bottom: 1px solid var(--lux-border);
+  padding: 0.9rem 1rem;
+}
+
+.orders-admin button {
+  border-radius: var(--lux-radius-sm);
+  border: 1px solid var(--lux-border);
+  padding: 0.55rem 0.9rem;
+}

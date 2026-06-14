@@ -1,0 +1,11 @@
+.reviews-admin {
+  display: grid;
+  gap: 1rem;
+}
+
+.reviews-admin article {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1.25rem;
+}

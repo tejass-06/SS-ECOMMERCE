@@ -1,0 +1,21 @@
+.checkout-page,
+form:has(input[type='email']) {
+  width: min(100%, 920px);
+  margin-inline: auto;
+}
+
+.checkout-page form,
+form:has(input[type='email']) {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+  padding: clamp(1.25rem, 4vw, 2rem);
+  box-shadow: var(--lux-shadow-md);
+}
+
+.checkout-page input,
+.checkout-page textarea {
+  min-height: 3.2rem;
+  width: 100%;
+  border-radius: var(--lux-radius-md);
+}

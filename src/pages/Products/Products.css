@@ -1,0 +1,18 @@
+section.max-w-7xl:has(.grid.md\:grid-cols-2) h1 {
+  letter-spacing: 0;
+  text-wrap: balance;
+}
+
+section.max-w-7xl:has(.grid.md\:grid-cols-2) > .grid:last-child {
+  align-items: stretch;
+}
+
+@media (max-width: 767px) {
+  section.max-w-7xl:has(.grid.md\:grid-cols-2) {
+    padding-top: 2rem !important;
+  }
+
+  section.max-w-7xl:has(.grid.md\:grid-cols-2) h1 {
+    font-size: 2.65rem !important;
+  }
+}

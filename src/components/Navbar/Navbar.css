@@ -1,0 +1,89 @@
+nav {
+  min-height: var(--lux-header);
+  background: rgba(8, 8, 12, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 22px 80px rgba(0, 0, 0, 0.24);
+  position: sticky;
+  top: 0;
+  z-index: 60;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, var(--lux-max));
+  margin: 0 auto;
+  padding: 0 1.75rem;
+}
+
+nav a {
+  color: var(--lux-text);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  opacity: 0.88;
+  transition: color var(--lux-transition), opacity var(--lux-transition),
+    transform var(--lux-transition);
+}
+
+nav a:first-child {
+  color: var(--lux-gold);
+  letter-spacing: 0.16em;
+  opacity: 1;
+}
+
+nav a:hover {
+  color: var(--lux-gold);
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+nav a.active {
+  color: var(--lux-gold);
+  position: relative;
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.4rem;
+  height: 2px;
+  background: var(--lux-gold);
+  border-radius: 999px;
+}
+
+.nav-count {
+  position: absolute;
+  top: -0.7rem;
+  right: -0.8rem;
+  display: grid;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--lux-gold);
+  color: var(--lux-ink);
+  font-size: 0.72rem;
+  font-weight: 800;
+}
+
+@media (max-width: 767px) {
+  nav > div {
+    gap: 1rem;
+    overflow-x: auto;
+  }
+
+  nav a:first-child {
+    font-size: 1.35rem;
+  }
+
+  nav div div {
+    gap: 0.85rem !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}

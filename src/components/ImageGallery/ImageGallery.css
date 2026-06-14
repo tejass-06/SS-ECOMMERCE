@@ -1,0 +1,15 @@
+.image-gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+.image-gallery img {
+  border-radius: var(--lux-radius-lg);
+  border: 1px solid var(--lux-border);
+  background: var(--lux-surface);
+}
+
+.image-gallery button {
+  overflow: hidden;
+  border-radius: var(--lux-radius-md);
+}

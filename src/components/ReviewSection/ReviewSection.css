@@ -1,0 +1,17 @@
+.review-section {
+  margin-top: 4rem;
+}
+
+.review-section article {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1.25rem;
+}
+
+.review-section textarea {
+  min-height: 8rem;
+  width: 100%;
+  border-radius: var(--lux-radius-md);
+  padding: 1rem;
+}

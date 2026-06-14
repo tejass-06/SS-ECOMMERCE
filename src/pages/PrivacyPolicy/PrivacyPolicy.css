@@ -1,0 +1,16 @@
+.privacy-policy-page,
+.terms-page,
+article {
+  line-height: 1.8;
+}
+
+.privacy-policy-page h1,
+.terms-page h1 {
+  margin-bottom: 1.5rem;
+}
+
+.privacy-policy-page p,
+.terms-page p,
+article p {
+  color: var(--lux-muted);
+}

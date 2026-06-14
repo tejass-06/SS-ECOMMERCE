@@ -1,0 +1,47 @@
+.newsletter {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: var(--lux-radius-xl);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.04));
+  padding: clamp(1.5rem, 4vw, 3rem);
+  box-shadow: var(--lux-shadow-md);
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.85rem;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 1rem 1.15rem;
+  border-radius: var(--lux-radius-md);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--lux-text);
+}
+
+.newsletter button {
+  border-radius: var(--lux-radius-md);
+  padding: 1rem 1.1rem;
+  border: none;
+  background: linear-gradient(90deg, var(--lux-gold), #cfa85a);
+  color: var(--lux-ink);
+  cursor: pointer;
+  transition: transform var(--lux-transition), box-shadow var(--lux-transition);
+}
+
+.newsletter button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--lux-shadow-glow);
+}
+
+@media (max-width: 767px) {
+  .newsletter form {
+    grid-template-columns: 1fr;
+  }
+}

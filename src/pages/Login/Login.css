@@ -1,0 +1,17 @@
+section.min-h-\[80vh\] form {
+  box-shadow: var(--lux-shadow-md);
+}
+
+section.min-h-\[80vh\] input {
+  border: 1px solid var(--lux-border);
+}
+
+section.min-h-\[80vh\] button {
+  background: linear-gradient(135deg, var(--lux-text), var(--lux-gold)) !important;
+}
+
+@media (max-width: 767px) {
+  section.min-h-\[80vh\] {
+    padding: 1rem;
+  }
+}

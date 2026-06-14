@@ -1,0 +1,27 @@
+section.max-w-7xl .grid.md\:grid-cols-2.gap-10 > img {
+  aspect-ratio: 1 / 1;
+  box-shadow: var(--lux-shadow-md);
+}
+
+section.max-w-7xl .grid.md\:grid-cols-2.gap-10 h1 {
+  line-height: 1;
+  text-wrap: balance;
+}
+
+section.max-w-7xl .grid.md\:grid-cols-2.gap-10 span.text-4xl {
+  color: var(--lux-gold);
+}
+
+section.max-w-7xl .grid.md\:grid-cols-2.gap-10 button {
+  min-height: 3.2rem;
+}
+
+@media (max-width: 767px) {
+  section.max-w-7xl .grid.md\:grid-cols-2.gap-10 h1 {
+    font-size: 2.5rem !important;
+  }
+
+  section.max-w-7xl .grid.md\:grid-cols-2.gap-10 .flex.gap-4 {
+    flex-direction: column;
+  }
+}

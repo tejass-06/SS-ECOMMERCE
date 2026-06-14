@@ -1,0 +1,27 @@
+.mobile-menu,
+[data-mobile-menu] {
+  background: rgba(7, 7, 10, 0.86);
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  box-shadow: var(--lux-shadow-md);
+  backdrop-filter: blur(var(--lux-blur));
+}
+
+.mobile-menu a,
+[data-mobile-menu] a {
+  border-radius: var(--lux-radius-sm);
+  padding: 0.85rem 1rem;
+}
+
+.mobile-menu a:hover,
+[data-mobile-menu] a:hover {
+  background: var(--lux-surface);
+  color: var(--lux-gold);
+}
+
+@media (min-width: 768px) {
+  .mobile-menu,
+  [data-mobile-menu] {
+    display: none;
+  }
+}

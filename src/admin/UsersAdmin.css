@@ -1,0 +1,11 @@
+.users-admin th,
+.users-admin td {
+  border-bottom: 1px solid var(--lux-border);
+  padding: 0.9rem 1rem;
+}
+
+.users-admin img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+}

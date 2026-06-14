@@ -1,0 +1,19 @@
+.orders-page,
+section:has([data-order]) {
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.orders-page article,
+[data-order] {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1.25rem;
+  transition: transform var(--lux-transition), box-shadow var(--lux-transition);
+}
+
+.orders-page article:hover,
+[data-order]:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--lux-shadow-sm);
+}

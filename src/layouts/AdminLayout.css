@@ -1,0 +1,56 @@
+.admin-layout {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+  background: var(--lux-bg);
+}
+
+.admin-layout aside {
+  border-right: 1px solid var(--lux-border);
+  background: rgba(255, 255, 255, 0.045);
+  padding: 1.25rem;
+}
+
+.admin-nav {
+  position: static;
+  display: grid;
+  min-height: auto;
+  gap: 0.6rem;
+  background: transparent !important;
+  box-shadow: none;
+}
+
+.admin-nav a {
+  border: 1px solid transparent;
+  border-radius: var(--lux-radius-sm);
+  padding: 0.8rem 1rem;
+  color: var(--lux-muted);
+}
+
+.admin-nav a:hover,
+.admin-nav a.active {
+  border-color: var(--lux-border);
+  background: var(--lux-surface);
+  color: var(--lux-gold);
+}
+
+.admin-layout main {
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+@media (max-width: 1023px) {
+  .admin-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-layout aside {
+    min-height: auto;
+    width: 100%;
+    border-right: 0;
+    border-bottom: 1px solid var(--lux-border);
+  }
+
+  .admin-nav {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+}

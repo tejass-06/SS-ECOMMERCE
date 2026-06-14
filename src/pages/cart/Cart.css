@@ -1,0 +1,23 @@
+section.max-w-7xl:has(.lg\:grid-cols-3) h1 {
+  text-wrap: balance;
+}
+
+section.max-w-7xl:has(.lg\:grid-cols-3) .lg\:col-span-2 {
+  min-width: 0;
+}
+
+section.max-w-7xl:has(.lg\:grid-cols-3) .h-fit {
+  position: sticky;
+  top: calc(var(--lux-header) + 1.5rem);
+  box-shadow: var(--lux-shadow-md);
+}
+
+section.max-w-7xl:has(.lg\:grid-cols-3) .h-fit button {
+  background: linear-gradient(135deg, var(--lux-text), var(--lux-gold)) !important;
+}
+
+@media (max-width: 1023px) {
+  section.max-w-7xl:has(.lg\:grid-cols-3) .h-fit {
+    position: static;
+  }
+}

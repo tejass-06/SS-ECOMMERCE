@@ -1,0 +1,11 @@
+.not-found-page {
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.not-found-page h1 {
+  font-size: clamp(4rem, 14vw, 8rem);
+  color: var(--lux-gold);
+}

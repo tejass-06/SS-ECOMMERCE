@@ -1,0 +1,15 @@
+.products-admin table,
+.orders-admin table,
+.users-admin table {
+  width: 100%;
+  overflow: hidden;
+  border-radius: var(--lux-radius-lg);
+  border-collapse: collapse;
+  background: var(--lux-surface);
+}
+
+.products-admin th,
+.products-admin td {
+  border-bottom: 1px solid var(--lux-border);
+  padding: 0.9rem 1rem;
+}

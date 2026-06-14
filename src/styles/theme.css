@@ -1,0 +1,62 @@
+/* Theme utilities for premium UI styling */
+.theme-overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.theme-overlay::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top left, rgba(216, 181, 109, 0.12), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(233, 166, 181, 0.08), transparent 24%);
+}
+
+.section-panel {
+  border-radius: var(--lux-radius-xl);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  box-shadow: 0 24px 75px rgba(0, 0, 0, 0.24);
+}
+
+.section-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--lux-radius-lg);
+  box-shadow: var(--lux-shadow-sm);
+}
+
+.page-heading {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.page-heading h1,
+.page-heading h2,
+.page-heading h3 {
+  letter-spacing: -0.03em;
+}
+
+.page-heading p {
+  color: var(--lux-muted);
+  max-width: 56rem;
+}
+
+.form-input {
+  width: 100%;
+  min-height: 3.5rem;
+  padding: 1rem 1.15rem;
+  border-radius: var(--lux-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 15, 20, 0.95);
+  color: var(--lux-text);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--lux-gold);
+  box-shadow: 0 0 0 4px rgba(216, 181, 109, 0.15);
+}

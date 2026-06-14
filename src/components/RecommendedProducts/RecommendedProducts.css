@@ -1,0 +1,14 @@
+.recommended-products {
+  margin-top: 4rem;
+}
+
+.recommended-products h2 {
+  margin-bottom: 1.5rem;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.recommended-products > div {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}

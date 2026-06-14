@@ -1,0 +1,21 @@
+.faq-page {
+  width: min(100%, 860px);
+  margin-inline: auto;
+}
+
+.faq-page details,
+details {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-lg);
+  background: var(--lux-surface);
+  padding: 1rem 1.25rem;
+}
+
+details + details {
+  margin-top: 0.75rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 700;
+}

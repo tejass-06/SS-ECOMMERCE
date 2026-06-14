@@ -1,0 +1,18 @@
+.contact-page {
+  width: min(100%, 960px);
+  margin-inline: auto;
+}
+
+.contact-page form,
+section:has(textarea) form {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}
+
+textarea {
+  resize: vertical;
+}

@@ -1,0 +1,13 @@
+.buy-now-page {
+  display: grid;
+  gap: 1.5rem;
+  width: min(100%, 960px);
+  margin-inline: auto;
+}
+
+.buy-now-page article {
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}

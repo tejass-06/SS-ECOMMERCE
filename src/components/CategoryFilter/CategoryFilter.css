@@ -1,0 +1,13 @@
+select,
+.category-filter {
+  min-height: 3.35rem;
+  border-radius: var(--lux-radius-md);
+  background: rgba(255, 255, 255, 0.075);
+  padding-inline: 1rem;
+  box-shadow: var(--lux-shadow-sm);
+}
+
+select:hover,
+.category-filter:hover {
+  border-color: var(--lux-border-strong);
+}

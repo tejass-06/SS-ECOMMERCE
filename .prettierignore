@@ -1,0 +1,17 @@
+node_modules
+dist
+build
+.vite
+public
+*.lock
+.env
+
+# Editor
+.vscode
+.idea
+
+# Logs
+npm-debug.log
+pnpm-debug.log
+yarn-debug.log
+yarn-error.log

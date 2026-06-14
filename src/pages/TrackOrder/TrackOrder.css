@@ -1,0 +1,14 @@
+.track-order-page {
+  width: min(100%, 760px);
+  margin-inline: auto;
+  padding-block: clamp(2rem, 5vw, 4rem);
+}
+
+.track-order-page form {
+  display: grid;
+  gap: 1rem;
+  border: 1px solid var(--lux-border);
+  border-radius: var(--lux-radius-xl);
+  background: var(--lux-surface);
+  padding: clamp(1.25rem, 4vw, 2rem);
+}

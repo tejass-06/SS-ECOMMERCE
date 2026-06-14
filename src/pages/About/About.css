@@ -1,0 +1,10 @@
+.about-page,
+section:has(h1 + p) {
+  padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.about-page p,
+section:has(h1 + p) p {
+  color: var(--lux-muted);
+  line-height: 1.85;
+}

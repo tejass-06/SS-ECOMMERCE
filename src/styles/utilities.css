@@ -1,0 +1,109 @@
+.lux-glass,
+[class*='bg-white/10'],
+[class*='backdrop-blur'] {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.12),
+    rgba(255, 255, 255, 0.055)
+  ) !important;
+  border-color: var(--lux-border) !important;
+  box-shadow: var(--lux-shadow-sm);
+  backdrop-filter: blur(var(--lux-blur)) saturate(145%);
+  -webkit-backdrop-filter: blur(var(--lux-blur)) saturate(145%);
+}
+
+.lux-card,
+[class*='rounded-3xl'] {
+  border-radius: var(--lux-radius-xl) !important;
+}
+
+.lux-container,
+[class*='max-w-7xl'] {
+  width: min(100%, var(--lux-max));
+}
+
+/* Common container utility when Tailwind isn't applied */
+.container {
+  width: min(100%, var(--lux-max));
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.lux-button,
+button,
+[role='button'] {
+  transition: transform var(--lux-transition), border-color var(--lux-transition),
+    background var(--lux-transition), color var(--lux-transition), box-shadow var(--lux-transition);
+}
+
+button:hover,
+[role='button']:hover {
+  transform: translateY(-1px);
+}
+
+button:active,
+[role='button']:active {
+  transform: translateY(0) scale(0.98);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--lux-gold);
+  outline-offset: 3px;
+}
+
+input,
+select,
+textarea {
+  color: var(--lux-text);
+  border: 1px solid var(--lux-border);
+  transition: border-color var(--lux-transition), box-shadow var(--lux-transition),
+    background var(--lux-transition);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--lux-gold);
+  box-shadow: 0 0 0 4px var(--lux-gold-soft);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Button helpers */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid var(--lux-border);
+  color: var(--lux-text);
+  cursor: pointer;
+  transition: var(--lux-transition);
+}
+
+.btn.primary {
+  background: linear-gradient(90deg, var(--lux-gold), #cfa85a);
+  color: var(--lux-ink);
+  border: none;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+::selection {
+  color: var(--lux-ink);
+  background: var(--lux-gold);
+}
