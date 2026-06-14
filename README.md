@@ -1,16 +1,41 @@
-# React + Vite
+# LUXESTEP Ecommerce
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium React + Vite ecommerce storefront built for modern fashion and footwear shopping.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive product catalog with refined product cards
+- Styled hero section and premium UI polish
+- Cart, wishlist, orders, and checkout flows
+- Authentication-driven user login/logout behavior
+- Admin dashboard for analytics, products, orders, coupons, reviews, and users
+- Smooth animations with Framer Motion
+- Dark luxury theme with glassmorphism and elegant typography
 
-## React Compiler
+## Installation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+Open the local dev server URL shown in the terminal.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Build
+
+```bash
+npm run build
+```
+
+## Project structure
+
+- `src/components` — UI components and reusable widgets
+- `src/pages` — page-level route screens
+- `src/layouts` — main app and admin layout wrappers
+- `src/context` — shared React contexts for auth, cart, wishlist
+- `src/services` — API service abstractions
+- `src/styles` — theme variables, utilities, and animations
+
+## Notes
+
+This repository was pushed to `https://github.com/tejass-06/SS-ECOMMERCE.git` with the full ecommerce project structure.
